@@ -28,12 +28,14 @@ public class Deer {
         Deer reinDeer = new ReinDeer(5);
         System.out.println(reinDeer.hasHorns()); // since the method is private, child class cannot inherit it, so it uses base class method
         reinDeer.WhatEats();  // this method can be inherited, since it is protected and child class can inherit.
+        // reinDeer.sayCheese(); // compile error - method is undefined
 
         System.out.println("-----------------------");
 
         ReinDeer reinDeer2 = new ReinDeer(3);
         System.out.println(reinDeer2.hasHorns());
         reinDeer2.WhatEats();
+        reinDeer2.sayCheese();
 
         System.out.println("-----------------------");
 
@@ -56,5 +58,9 @@ class ReinDeer extends Deer {
 
     public void WhatEats() {  // method name starts with uppercase is legal
         System.out.println("ReinDeers also eat grass");
+    }
+
+    public void sayCheese() {
+        System.out.println("cheseee");
     }
 }
