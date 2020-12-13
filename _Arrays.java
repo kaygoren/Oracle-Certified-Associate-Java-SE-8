@@ -1,14 +1,12 @@
 import java.util.*;
 
-public class Arrays {
+public class _Arrays {
     
     public static void main(String[] args) {
 
         final String names[] = new String[3];
         names[1] = "kaygoren";  // names = [null, "kaygoren", null]
 
-        System.out.println(names.length);  // for array
-        System.out.println(names[1].length()); // for string
 
         // different initialization of arrays
         final int[] nums1 = new int[]{1,2,8,4,0};
