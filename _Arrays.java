@@ -34,6 +34,9 @@ public class _Arrays {
             System.out.println();
         }
 
+        int[][] cubbies = new int[0][5];  // legal
+        
+
         List<Integer> list = new ArrayList<>(List.of(1,2,3,4));
         Object[] objectArray = list.toArray();
         // Integer[] intArray = list.toArray();  // error
