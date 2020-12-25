@@ -13,5 +13,12 @@ public class VarArgs {
         test_vararg(1, 2, 3);  // 2
         test_vararg(1, new int[]{3,4});  // 2
         // test_vararg(1, null);  // NullPointerEception
+
+        // VarArgs.howMany(true, {true, true});  // invalid declaration
+        VarArgs.howMany(true, new boolean[]{true, true});
+    }
+
+    public static int howMany(boolean b1, boolean... b2) {
+        return b2.length;
     }
 }
