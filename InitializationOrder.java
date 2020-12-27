@@ -2,6 +2,8 @@ public class InitializationOrder {
     
     private String name = "Torchie";
 
+    private static GS gs = new GS();
+
     {
         System.out.println(name);
     }
@@ -31,4 +33,9 @@ public class InitializationOrder {
         System.out.println("main");
         new InitializationOrder();
     }
+}
+
+class GS {
+    public static int trophy = 22;
+    public final String legend = "Hagi";
 }

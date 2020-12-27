@@ -1,6 +1,7 @@
 public class Deer {
 
-    public Deer() {
+    public Deer() {  // this constructor must exist, since there is no explicit super call in Reindeer
+                     // which means it uses super() implicitly.
         System.out.println("Deer");
     }
 
@@ -20,7 +21,7 @@ public class Deer {
 
 
         Deer deer = new Deer(2);
-        System.out.println(deer.hasHorns()); // uses own method, obviously not inheritance here
+        System.out.println(deer.hasHorns()); // uses own method, obviously there is no inheritance here
         deer.WhatEats(); // also uses own method
 
         System.out.println("-----------------------");
@@ -41,13 +42,22 @@ public class Deer {
 
         // ReinDeer deer2 = new Deer(3);  // cannot convert from Deer to ReinDeer
 
+        ReinDeer reinDeer3 = new ReinDeer();
+
     }
 }
 
 class ReinDeer extends Deer {
 
-    public ReinDeer(int age) {
+    public ReinDeer(int age) {  // if we dont call super constructor explicitly, super() is called implicitly.
+                                // either there are no constructor in parent so compiler defines and uses DEFAULT no-arg constructor
+                                // or we have to define no-arg constructor
         System.out.println("ReinDeerAge");
+    }
+
+    public ReinDeer() {
+        this(1);
+        System.out.println("ReinDeer");
     }
 
     public boolean hasHorns() {  // since parent has same method but with private access modifier, 
