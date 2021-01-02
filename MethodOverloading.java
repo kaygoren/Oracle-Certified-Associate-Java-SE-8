@@ -36,8 +36,6 @@ public class MethodOverloading {
     public void fly(Object i, Object j) { System.out.println("Object"); }
     public void fly(int... i) { System.out.println("vararg"); }
 
-
-
     public static void main(String... args) {
 
         MethodOverloading m = new MethodOverloading(10, "white");
@@ -52,12 +50,5 @@ public class MethodOverloading {
         // if int + long + Integer versions comment out then Object version is called
         // if int + long + Integer + Object versions comment out then vararg version is called
         m.fly(5,6);
-
-
-
-
-
     }
-
-
 }
