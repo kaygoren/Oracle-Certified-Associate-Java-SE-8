@@ -2,13 +2,10 @@ import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
 
-import javax.tools.DocumentationTool.Location;
-
 public class DateAndTime {
 
     public static void main(String ... args) {
 
-    
         LocalDate date = LocalDate.of(1995, Month.JUNE, 10);
 
         LocalTime time1 = LocalTime.of(16, 59);
@@ -25,7 +22,7 @@ public class DateAndTime {
         date2 = date2.plusMonths(1); // 2014-02-28
 
         Period period = Period.ofMonths(2); // every 2 months
-        Period period2 = Period.of(1, 0, 7);  // evert 1 year and 7 days
+        Period period2 = Period.of(1, 0, 7);  // every 1 year and 7 days
 
         date2 = date2.plus(period);  // 2014-04-28
         date2 = date2.plus(period2); // 2015-05-05
@@ -56,6 +53,5 @@ public class DateAndTime {
         DateTimeFormatter f = DateTimeFormatter.ofPattern("dd MM yyyy, HH:mm");
         LocalDateTime dt2 = LocalDateTime.parse("10 06 1995, 10:15", f);  // 1995-06-10T10:15
         LocalTime t = LocalTime.parse("11:22"); // 11:22
-
     }
 }

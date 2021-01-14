@@ -36,8 +36,8 @@ public class Operator {
         int t = 1;
         int e = r >= 10 ? r++ : t++;  // e-> 1, r-> 1, t-> 2;
 
-        double d2 = 10.2 % -3.5f;
-        System.out.println(d2);
+        double d2 = -10.2 % -3.5f;  // d2 = -3.1999999999999993
+        double d3 = 10.2 % -3.5f;   // d2 =  3.1999999999999993
 
         int xs = 6;
 
@@ -48,7 +48,6 @@ public class Operator {
         System.out.println(xs); // 7 even if leftside is always true, leftside must be calculated.
 
         boolean yy = true;
-
         boolean xx = (yy = false);  // xx-> false , yy-> false
 
         File afile = new File("vv.txt");

@@ -7,7 +7,7 @@ public class SwitchStatement {
         int id = 0;
 
         // data types supported by switch : int-Integer , byte-Byte , short-Short , char-Character , String ,  enum values
-        // boolean and long, and their associated wrapper classes, are not supported by switch statements
+        // boolean and long and float and double, and their associated wrapper classes, are not supported by switch statements
         
         // cases can be literals, enum constants or final constants!
 

@@ -1,13 +1,17 @@
 import java.io.IOException;
 
+class MyException extends Exception {};
+
 public class Exceptions2 {
     
     public static void main(String... args) {
         
         eatCarrot();
+
         try {
             drinkWater();
         } catch(Exception e) {}
+
         try {
             fireInTheHall();
         } catch(Exception e) {
@@ -22,7 +26,7 @@ public class Exceptions2 {
 // ******************************************************************************************************************** //
         try {
             Integer.parseInt("abc");  // throws NumberFormatException and it is a subclass of IllegalArgumentException
-        }catch(IllegalArgumentException e) {}
+        } catch(IllegalArgumentException e) {}
 // ******************************************************************************************************************** //
         try {
             throw new RuntimeException();
@@ -31,11 +35,11 @@ public class Exceptions2 {
             System.out.println("catch-works");
             // throw new Exception();  // since Exception is a checked exception, it has to be declared or handled. COMPILE ERROR
             throw new RuntimeException();  // RuntimeException is unchecked exception. so, no extra things are needed. COMPILES but throws exception
-            // System.out.println("catch-unreachable");  // exception is thrown before this print, it is unreachable
+            // System.out.println("catch-unreachable");  // exception is thrown before this print, it is unreachable  COMPILE ERROR
         } finally {
             System.out.println("finally-works");  // this block runs and then exception in catch is thrown.
         }
-        // System.out.println("end-unreachable");  // since there is an exception caused from catch, unreachable
+        // System.out.println("end-unreachable");  // since there is an exception caused from catch, unreachable, COMPILE ERROR
     }
 
     private static void eatCarrot() throws RuntimeException {}
@@ -57,7 +61,7 @@ public class Exceptions2 {
     // private void walkInBadWay() {  // does not compile
     //     try {
     //         walkAround();
-    //     } catch(IOException e) {
+    //     } catch(MyException e) {
     //         System.out.println("not reachable");
     //     }
     // }

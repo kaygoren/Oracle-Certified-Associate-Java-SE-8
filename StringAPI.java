@@ -1,14 +1,12 @@
 public class StringAPI {
     
-
     public static void main(String[] args) {
         
-
         System.out.println(1 + 2 + "a"); // 3a
         System.out.println(1 + 2 + 3 + "4"); // 64  
 
-
-        String string = "animals"; System.out.println(string.indexOf('a')); // 0 
+        String string = "animals";
+        System.out.println(string.indexOf('a')); // 0 
         System.out.println(string.indexOf("al")); // 4 
         System.out.println(string.indexOf('a', 4)); // 4 
         System.out.println(string.indexOf("al", 5)); // -1
@@ -44,7 +42,5 @@ public class StringAPI {
         sb.delete(5, 25);  // kenan
         sb.insert(5, "-");  //kenan-
         sb.insert(1, "?");  // k?enan-
-        
-
     }
 }

@@ -37,7 +37,7 @@ public class ArrayLists {
         // --------------------------------------------------------------------------------------------------------------------------
 
         Integer[] numArray = {9,8,7};
-        List<Integer> numbers5 = Arrays.asList(numArray);  // numArray can nat be -> int[]
+        List<Integer> numbers5 = Arrays.asList(numArray);  // numArray can not be -> int[]
                                                            // numArray and numbers5 point to same data source.
         // numbers5.remove(1); // exception since list initiated from array, the size is fixed, we cannot make operations that causes change of size.
         List<Integer> numbers6 = new ArrayList<>(Arrays.asList(numArray));

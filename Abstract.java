@@ -8,8 +8,11 @@ public class Abstract {
         Swan swan = new Swan();
         Tiger tiger = new Tiger();
 
+        Animal aTiger = new Tiger();
+
         printAnimalName(swan);
         printAnimalName(tiger);
+        printAnimalName(aTiger);
     }
 
     public static void printAnimalName(Animal animal) {

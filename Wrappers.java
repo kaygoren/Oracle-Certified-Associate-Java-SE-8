@@ -3,9 +3,7 @@ import java.util.List;
 
 public class Wrappers {
     
-
     public static void main(String[] args) {
-
 
         float primitive = Float.parseFloat("123");
         Float wrapper = Float.valueOf("123.2");
@@ -24,7 +22,7 @@ public class Wrappers {
 
         list.add(0);
         list.add(1);
-        list.add(2);
-        list.remove(1); // remove at the first index , not 1 
+        list.add(2); // [null, 0, 1, 2]
+        list.remove(1); // remove at the first index , not 1  : [null, 1, 2]
     }
 }

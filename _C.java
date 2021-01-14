@@ -3,7 +3,7 @@ public class _C {
     // the name must begin with a letter or $ or _
     // subsequent characters may also be number.
 
-    private static int $; // is ok but int _ is not ok.
+    private static int $; // is ok, int  _a is ok but int _ is not ok.
     
     private static boolean bool; // class variable, default value is false
     private float f; // instance variable, default is 0.0

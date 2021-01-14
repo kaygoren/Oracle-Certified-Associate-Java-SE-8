@@ -11,7 +11,7 @@ public class PrimitiveTypes {
         int hexadecimal = 0xFF; // 255 
         int binary = 0b11; // 3
 
-        // does not compile
+        // followings do not compile
         // double notAtStart = _1000.00;
         // double notAtEnd = 1000.00_;
         // double notBeforeDecimal = 1000_.00;

@@ -12,7 +12,7 @@ interface Shape2 {
     
     int getMaxHeight(); // different return types are illegal.
 
-    // float getMaxWidth() {  // does not compile
+    // float getMaxWidth() {  // does not compile, must be declared as static or default
     //     return 2.0f;
     // }
 }

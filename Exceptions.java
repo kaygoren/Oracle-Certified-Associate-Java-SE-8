@@ -38,6 +38,7 @@ public class Exceptions {
                                                // the reason of this behaviour is checked / unchecked exception types. 
             }
         } finally {}
+        // System.out.println("unreachable code");  // compile error
     }
 
     public String resultWithoutCatch() {

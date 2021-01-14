@@ -21,7 +21,7 @@ public class Static {
     
     public static void main(String[] args) {
 
-        Arrays.asList("one");  // to be used,  <import java.util.Arrays> has to be imported.
+        Arrays.asList("one");  // <import java.util.Arrays> has to be imported to be compiled.
         asList("one", "two");
 
         values.add("changed");  // it compiles,  final modifier prevents from reassigning to a different object.
