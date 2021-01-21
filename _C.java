@@ -12,11 +12,22 @@ public class _C {
     public String __s;
     protected long L = 1L;
 
+    public static int staticValue=1111;
+
     public void eat(int piecesOfCheese) {  // this method consists TWO LOCAL VARIABLES.
         int bitesOfCheese = 1; 
     }
 
+    // public static void main() -> compiles bot does not run!
     public static void main(String[] args) {
+
+        // int staticValue=3333;
+        System.out.println(staticValue);  // 3333, not 1111
+
+        double d = new Double(1.23);  // not fancy but okey
+
+        Object o = 5;
+        System.out.println(o);
 
         _C _c = new _C();
 
