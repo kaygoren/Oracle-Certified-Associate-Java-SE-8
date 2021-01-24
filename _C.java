@@ -35,7 +35,10 @@ public class _C {
 
         System.out.println(_c.__s); // null
         System.out.println($); // 0
-        // System.out.print(a_b); // compilation error, local variables require assignment before referencing them.
-    
+        // System.out.print(a_b); // compilation error, local variables require assignment before referencing them.)
+
+        final String k;
+        k = "kenan";  // legal
+        // k = "kenan2";  // does not compile
     }
 }
