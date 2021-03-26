@@ -7,4 +7,8 @@ public class Bird {
     protected void useWings() {
         System.out.println(wing);
     }
+
+    public static void main(String... args) {
+        System.out.println("aaaa");
+    }
 }

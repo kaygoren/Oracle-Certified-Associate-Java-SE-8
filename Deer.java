@@ -41,9 +41,6 @@ public class Deer {
         System.out.println("-----------------------");
 
         // ReinDeer deer2 = new Deer(3);  // cannot convert from Deer to ReinDeer
-
-        ReinDeer reinDeer3 = new ReinDeer();
-
     }
 }
 

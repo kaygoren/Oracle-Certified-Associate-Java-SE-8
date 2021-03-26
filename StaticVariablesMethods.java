@@ -8,12 +8,15 @@ public class StaticVariablesMethods {
 
     public static void classMethod() { }
 
-    public static void classMethodWithInstanceField() {
-        // System.out.println(instanceField);  using non static field in static method is not allowed.
+    public static void classMethodWithInstanceField(int a) {
+        // System.out.println(instanceField);  //using non static field in static method is not allowed.
+        int b = 30;
+        System.out.println(a + b);
     }
     
     public static void main(String... args) {
 
+        classMethodWithInstanceField(115);
 
         // instanceMethod();  // not allowed
         classMethod();

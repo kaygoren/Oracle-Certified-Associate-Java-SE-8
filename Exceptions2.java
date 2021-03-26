@@ -1,4 +1,6 @@
 import java.io.IOException;
+class OutOfBoundsException extends BadCatchException {}  // COMPILES !!!!!!
+class BadCatchException extends Exception {}
 
 class MyException extends Exception {};
 
@@ -62,6 +64,14 @@ public class Exceptions2 {
     //     try {
     //         walkAround();
     //     } catch(MyException e) {
+    //         System.out.println("not reachable");
+    //     }
+    // }
+
+    // private void walkInBadWay() {  // does not compile
+    //     try {
+    //         System.out.println("no no no");
+    //     } catch(MyException e) {                     // if catch(Exception e) is used then compiles
     //         System.out.println("not reachable");
     //     }
     // }

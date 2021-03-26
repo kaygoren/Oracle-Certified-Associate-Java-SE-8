@@ -30,6 +30,7 @@ public class ArrayLists {
         // --------------------------------------------------------------------------------------------------------------------------
 
         ArrayList list1 = new ArrayList(); // pre Java5 way of creating ArrayList, still legal.
+        // ArrayList list1 = new ArrayList<>();  // also legal
         list1.add(5);
         list1.add("kenan");
         System.out.println(list1);  // [5, "kenan"]
@@ -69,6 +70,19 @@ public class ArrayLists {
         int y = Collections.binarySearch(hex, "3A");
         int z = Collections.binarySearch(hex, "4F");
         System.out.println(x + " " + y + " " + z);
-    
+
+
+        List<Integer> a = new ArrayList(List.of(1,2,3));
+        List<Integer> b = new ArrayList(List.of(1,2,3));
+        System.out.print(a == b);  // false
+
+        String aa = new String("kenan");
+        String bb = new String("kenan");
+        System.out.print(aa == bb);  // false
+
+        Integer aaa = new Integer(50);
+        Integer bbb = new Integer(50);
+        System.out.print(aaa == bbb);  // false
+
     }
 }

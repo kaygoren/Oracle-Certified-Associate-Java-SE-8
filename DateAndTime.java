@@ -6,6 +6,8 @@ public class DateAndTime {
 
     public static void main(String ... args) {
 
+        java.util.Date asd = new java.util.Date(1);
+
         LocalDate date = LocalDate.of(1995, Month.JUNE, 10);
 
         LocalTime time1 = LocalTime.of(16, 59);

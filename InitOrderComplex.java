@@ -17,6 +17,6 @@ public class InitOrderComplex {
     {add(8);}
 
     public static void main(String args[]) {
-
+        new InitOrderComplex();
     }
 }

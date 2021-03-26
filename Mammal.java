@@ -30,7 +30,7 @@ class Cow extends Mammal {
         System.out.println(super.name);
     }
 
-    // public int eat_overriden(int food) {  // overriden method,so return types must be the same. compile error!!
+    // public int eat_overriden(int food) {  // overriden method,so return types must be covariant. compile error!!
     //     return food;
     // }
 
