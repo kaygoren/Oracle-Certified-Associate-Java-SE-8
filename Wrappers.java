@@ -14,14 +14,15 @@ public class Wrappers {
         // int bad1 = Integer.parseInt("a");  // exception
         // Integer bad2 = Integer.valueOf("123.34");  // exception
 
-        System.out.println(primitive + " " + wrapper);
-
         boolean pBoolean = Boolean.parseBoolean("TRUE");  // true
-        Boolean wBoolean = Boolean.valueOf("TRUE");  // true
+        Boolean wBoolean = Boolean.valueOf("true");  // true
+
+        System.out.println(pBoolean + " " + wBoolean);
 
         List<Integer> list = new ArrayList<>();
 
         list.add(null); // legal
+        System.out.println(list.get(0));
         // int h = list.get(0);  // NullPointerException
 
         list.add(0);

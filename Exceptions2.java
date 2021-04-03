@@ -1,4 +1,6 @@
 import java.io.IOException;
+class OutOfBoundsException extends BadCatchException {}  // COMPILES !!!!!!
+class BadCatchException extends Exception {}
 
 class MyException extends Exception {};
 
@@ -7,6 +9,7 @@ public class Exceptions2 {
     public static void main(String... args) {
         
         eatCarrot();
+        new Exceptions2().walkInGoodWay__();
 
         try {
             drinkWater();
@@ -65,6 +68,22 @@ public class Exceptions2 {
     //         System.out.println("not reachable");
     //     }
     // }
+
+    private void walkInGoodWay_() {
+        try {
+            walkAround();
+        } catch(Exception e) {
+            System.out.println("reachable");
+        }
+    }
+
+    private void walkInGoodWay__() {
+        try {
+           
+        } catch(Exception e) {
+            System.out.println("reachable");
+        }
+    }
 
     private void walkInGoodWay() throws IOException {
         walkAround();

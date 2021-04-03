@@ -39,7 +39,7 @@ public class MethodOverloading {
     public static void main(String... args) {
 
         MethodOverloading m = new MethodOverloading(10, "white");
-        m.fly(5, 6); // if public void fly(int numMiles) method comments out, output is long
+        m.fly(5, 6); // if public void fly(int i, int j) method comments out, output is long
         m.fly(Integer.valueOf("5"), Integer.valueOf("6"));
         m.fly(5L, 6L);
 

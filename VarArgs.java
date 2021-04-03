@@ -16,6 +16,7 @@ public class VarArgs {
 
         // howMany(true, {true, true});  // invalid declaration
         howMany(true, new boolean[]{true, true});
+        howMany(true, true, true);
     }
 
     public static int howMany(boolean b1, boolean... b2) {

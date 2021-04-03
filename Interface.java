@@ -23,3 +23,7 @@ class Square implements Shape, Shape2 {
         return 10;
     }
 }
+
+abstract interface A {
+    int a = 1;
+}

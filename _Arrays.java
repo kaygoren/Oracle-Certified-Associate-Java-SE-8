@@ -2,7 +2,7 @@ import java.util.*;
 
 public class _Arrays {
     
-    public static void main(String[] args) {
+    public static void main(String args[]) {
 
         final String names[] = new String[3];
         names[1] = "kaygoren";  // names = [null, "kaygoren", null]

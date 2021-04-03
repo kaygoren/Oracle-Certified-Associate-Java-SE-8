@@ -48,7 +48,8 @@ public class Operator {
         System.out.println(xs); // 7 even if leftside is always true, leftside must be calculated.
 
         boolean yy = true;
-        boolean xx = (yy = false);  // xx-> false , yy-> false
+        boolean xx = yy = false;  // xx-> false , yy-> false
+        System.out.println(xx);
 
         File afile = new File("vv.txt");
         File bfile = new File("vv.txt");

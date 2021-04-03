@@ -20,6 +20,6 @@ public class Swan extends Bird {
 
     public void helpOtherBird() {
         Bird otherBird = new Swan();
-        // otherBird.baseMethod();  // DOES NOT COMPILE, // since different packages and Bird does not extend Bird.
+        // otherBird.useWings();  // DOES NOT COMPILE, // since different packages and Bird does not extend Bird.
     }
 }
