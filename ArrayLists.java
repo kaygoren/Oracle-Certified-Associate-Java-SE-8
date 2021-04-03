@@ -71,7 +71,6 @@ public class ArrayLists {
         int z = Collections.binarySearch(hex, "4F");
         System.out.println(x + " " + y + " " + z);  // 2 1 -3
 
-
         List<Integer> a = new ArrayList(List.of(1,2,3));
         List<Integer> b = new ArrayList(List.of(1,2,3));
         System.out.print(a == b);  // false
